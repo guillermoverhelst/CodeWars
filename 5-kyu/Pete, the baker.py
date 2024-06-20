@@ -1,3 +1,4 @@
+#First solution
 def cakes(recipe, available):
     cake_counter = 0
     cake = 0 
@@ -26,6 +27,7 @@ def cakes(recipe, available):
             
     return min_cakes
 
+#Better solution
 def cakes(recipe, available):
 	return min(available.get(k, 0)/recipe[k] for k in recipe)
 
